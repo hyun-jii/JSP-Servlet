@@ -1,16 +1,16 @@
-/*=============================
+/*=================================================
  	MemberDTO.java
-	- 데이터 전송 객체 활용
-=============================== */
+ 	- 객체 전용 (데이처 보관 및 전송) : JAVA Bean
+ ==================================================*/
 
 package com.test;
 
 public class MemberDTO
 {
-	// 주요 속성 구성
-	private String sid, name, tel;
-	//-- TBL_MEMBER 테이블의 컬럼 구조
+	// 주요 속성 구성(프로퍼티 구성)
+	private String sid, name, tel;	//-- 번호, 이름, 전화번호
 
+	//getter / setter 구성
 	public String getSid()
 	{
 		return sid;
@@ -42,5 +42,4 @@ public class MemberDTO
 	}
 	
 	
-
 }
